@@ -1,0 +1,89 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+header{
+    .navbar{
+        background-color: #ffe4fd;
+        .container-fluid{
+            h1{
+                display: flex;
+                justify-content: center;
+                img{
+                    width: 40%;
+                }
+            }
+            .navbar-collapse{
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            font-family: 'Oswald', sans-serif;
+                            color: black;
+                            font-size: 1.3rem;
+                            text-align: center;
+                            transition: all 300ms;
+                            &:hover{
+                                transform: scale(1.15);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menu-home{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #F9F3EE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .sobre-mi{   
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        h2{
+            font-family: 'Dancing Script', cursive;
+        }
+        .contenedor-foto{
+            position: relative;
+            height: 300px;
+            width: 250px;
+            overflow: hidden;
+            border-radius: 6px;
+            .foto{
+                width: 100%;
+            }
+        }
+    }   
+    .contacto{
+        display: flex;
+        padding: 0.5rem;
+        width: 100%;
+        a{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 40%;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: #ffe4fd;
+    text-align: center;
+    h2{
+        font-size: 0.8rem;
+    }
+}

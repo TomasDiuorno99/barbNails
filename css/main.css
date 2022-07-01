@@ -1,0 +1,62 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #ffffff; }
+
+header .navbar {
+  background-color: #ffe4fd; }
+  header .navbar .container-fluid h1 {
+    display: flex;
+    justify-content: center; }
+    header .navbar .container-fluid h1 img {
+      width: 40%; }
+  header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 1.3rem;
+    text-align: center;
+    transition: all 300ms; }
+    header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+      transform: scale(1.15); }
+
+.menu-home {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #F9F3EE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .menu-home .sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .menu-home .sobre-mi h2 {
+      font-family: 'Dancing Script', cursive; }
+    .menu-home .sobre-mi .contenedor-foto {
+      position: relative;
+      height: 300px;
+      width: 250px;
+      overflow: hidden;
+      border-radius: 6px; }
+      .menu-home .sobre-mi .contenedor-foto .foto {
+        width: 100%; }
+  .menu-home .contacto {
+    display: flex;
+    padding: 0.5rem;
+    width: 100%; }
+    .menu-home .contacto a {
+      display: flex;
+      justify-content: center; }
+      .menu-home .contacto a img {
+        width: 40%; }
+
+footer {
+  background-color: #ffe4fd;
+  text-align: center; }
+  footer h2 {
+    font-size: 0.8rem; }
