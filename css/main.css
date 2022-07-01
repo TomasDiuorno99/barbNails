@@ -7,13 +7,20 @@
 body {
   background-color: #ffffff; }
 
+/* navbar */
 header .navbar {
-  background-color: #ffe4fd; }
-  header .navbar .container-fluid h1 {
-    display: flex;
-    justify-content: center; }
-    header .navbar .container-fluid h1 img {
-      width: 40%; }
+  background-color: #ffe4fd;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2 1fr); }
+  header .navbar .logo {
+    position: relative;
+    max-width: 120px;
+    max-height: 105px;
+    margin: 1rem;
+    justify-self: center; }
+    header .navbar .logo img {
+      width: 100%; }
   header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
     font-family: 'Oswald', sans-serif;
     color: black;
@@ -23,6 +30,7 @@ header .navbar {
     header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
       transform: scale(1.15); }
 
+/* home */
 .menu-home {
   margin: 1rem;
   padding: 1rem;
@@ -37,24 +45,37 @@ header .navbar {
     text-align: center; }
     .menu-home .sobre-mi h2 {
       font-family: 'Dancing Script', cursive; }
+    .menu-home .sobre-mi p {
+      font-family: 'Arima', cursive; }
     .menu-home .sobre-mi .contenedor-foto {
       position: relative;
-      height: 300px;
-      width: 250px;
+      max-height: 300px;
+      max-width: 250px;
       overflow: hidden;
-      border-radius: 6px; }
+      border-radius: 6px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); }
       .menu-home .sobre-mi .contenedor-foto .foto {
         width: 100%; }
   .menu-home .contacto {
     display: flex;
+    justify-content: space-evenly;
     padding: 0.5rem;
+    margin-top: 0.5rem;
     width: 100%; }
-    .menu-home .contacto a {
-      display: flex;
-      justify-content: center; }
-      .menu-home .contacto a img {
-        width: 40%; }
+    .menu-home .contacto .wsp {
+      position: relative;
+      width: 45px;
+      height: 45px; }
+      .menu-home .contacto .wsp a img {
+        width: 100%; }
+    .menu-home .contacto .insta {
+      position: relative;
+      width: 45px;
+      height: 45px; }
+      .menu-home .contacto .insta a img {
+        width: 100%; }
 
+/* footer */
 footer {
   background-color: #ffe4fd;
   text-align: center; }
