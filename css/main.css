@@ -31,49 +31,84 @@ header .navbar {
       transform: scale(1.15); }
 
 /* home */
-.menu-home {
+main {
   margin: 1rem;
   padding: 1rem;
-  background-color: #F9F3EE;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .menu-home .sobre-mi {
+  background-color: #F9F3EE; }
+  main .titulo {
+    text-align: center; }
+    main .titulo h1 {
+      font-family: 'Lobster', cursive; }
+  main .menu-home {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center; }
-    .menu-home .sobre-mi h2 {
-      font-family: 'Dancing Script', cursive; }
-    .menu-home .sobre-mi p {
-      font-family: 'Arima', cursive; }
-    .menu-home .sobre-mi .contenedor-foto {
+    justify-content: center; }
+    main .menu-home .sobre-mi {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center; }
+      main .menu-home .sobre-mi h2 {
+        font-family: 'Lobster', cursive; }
+      main .menu-home .sobre-mi span {
+        font-family: 'Arima', cursive; }
+      main .menu-home .sobre-mi p {
+        font-family: 'Arima', cursive; }
+      main .menu-home .sobre-mi .contenedor-foto {
+        position: relative;
+        max-height: 300px;
+        max-width: 250px;
+        overflow: hidden;
+        border-radius: 6px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); }
+        main .menu-home .sobre-mi .contenedor-foto .foto {
+          width: 100%; }
+  main .mi-trabajo {
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem; }
+    main .mi-trabajo .subtitulo {
+      text-align: center; }
+      main .mi-trabajo .subtitulo h3 {
+        font-family: 'Lobster', cursive; }
+    main .mi-trabajo .container-unas {
       position: relative;
+      max-width: 280px;
       max-height: 300px;
-      max-width: 250px;
       overflow: hidden;
-      border-radius: 6px;
+      border-radius: 5px;
       box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); }
-      .menu-home .sobre-mi .contenedor-foto .foto {
-        width: 100%; }
-  .menu-home .contacto {
+      main .mi-trabajo .container-unas img {
+        width: 100%;
+        height: 100%; }
+  main .contacto {
     display: flex;
     justify-content: space-evenly;
     padding: 0.5rem;
     margin-top: 0.5rem;
     width: 100%; }
-    .menu-home .contacto .wsp {
+    main .contacto .wsp {
       position: relative;
       width: 45px;
       height: 45px; }
-      .menu-home .contacto .wsp a img {
+      main .contacto .wsp a img {
         width: 100%; }
-    .menu-home .contacto .insta {
+    main .contacto .insta {
       position: relative;
       width: 45px;
       height: 45px; }
-      .menu-home .contacto .insta a img {
+      main .contacto .insta a img {
         width: 100%; }
+  main .ubicacion {
+    display: flex;
+    justify-content: center; }
+    main .ubicacion .mapa {
+      width: 300px;
+      height: 300px; }
+      main .ubicacion .mapa iframe {
+        width: 100%;
+        height: 100%; }
 
 /* footer */
 footer {
